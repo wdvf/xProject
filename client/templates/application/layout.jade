@@ -1,9 +1,5 @@
 template(name='layout')
     .container
-        header.ui.pointing.menu
-            a(class='active item', href='/' )
-                |  Home
-            a.item
-                |  Messages
+        +header
         #main
             +yield
