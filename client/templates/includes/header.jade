@@ -2,8 +2,9 @@ template(name='header')
     header.ui.pointing.menu
         a(class='active item', href='/' )
             |  Home
-        a.item
-            |  Messages
+        if currentUser
+            a(class='item', href="{{pathFor 'postSubmit'}}")
+                |  Write
         .right.menu
             .item
                 +loginButtons
