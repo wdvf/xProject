@@ -1,0 +1,9 @@
+template(name='layout')
+    .container
+        header.ui.pointing.menu
+            a.active.item
+                |  Home
+            a.item
+                |  Messages
+        #main
+            +yield
