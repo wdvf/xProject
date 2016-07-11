@@ -10,6 +10,7 @@ template(name='postItem')
             span.left.floated.like
                 i.like.icon
                 |       Like
-            span.right.floated.star
-                i.star.icon
-                |       Favorite
+            a(href="{{pathFor 'postPage'}}")
+                span.right.floated.star
+                    i.star.icon
+                    |       Comment

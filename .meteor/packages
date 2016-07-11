@@ -22,3 +22,4 @@ twbs:bootstrap
 underscore
 mquandalle:jade
 iron:router
+sacha:spin
