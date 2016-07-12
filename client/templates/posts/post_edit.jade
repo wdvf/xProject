@@ -1,0 +1,10 @@
+template(name='postEdit')
+    form.ui.form.form-group
+        .field
+            label   Text
+            textarea(rows='5', placeholder='Write something...', name="publicationText", type='text')
+                |{{publication}}
+        button(class='ui primary button', type='submit')
+            |   Save
+        button(class='ui delete button', href='#')
+            |   Delete Post

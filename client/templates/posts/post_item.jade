@@ -14,3 +14,8 @@ template(name='postItem')
                 span.right.floated.star
                     i.star.icon
                     |       Comment
+            if ownPost
+                a(href="{{pathFor 'postEdit'}}")
+                    span.right.floated.star
+                        i.star.icon
+                        |       Edit
