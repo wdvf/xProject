@@ -13,7 +13,7 @@ template(name='postItem')
             a(href="{{pathFor 'postPage'}}")
                 span.right.floated.star
                     i.star.icon
-                    |       Comment
+                    |       {{commentsCount}} Comments
             if ownPost
                 a(href="{{pathFor 'postEdit'}}")
                     span.right.floated.star

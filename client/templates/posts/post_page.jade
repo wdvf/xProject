@@ -1,2 +1,11 @@
 template(name='postPage')
     +postItem
+
+    .ui.comments
+        h3.ui.dividing.header Comments
+        +each comments
+            +commentItem
+    if currentUser
+        +commentSubmit
+    else
+        p Please log in to leave a comment.
